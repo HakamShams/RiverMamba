@@ -1,0 +1,455 @@
+<!DOCTYPE HTML>
+<!--
+	Strongly Typed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Nerfi CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+	Modified by: Mohamad Hakam Shams Eddin CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+-->
+<html xmlns="http://www.w3.org/1999/html">
+	<head>
+		<title>IDE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/academicons.min.css" />
+		<link rel="stylesheet" href="assets/css/bulma-carousel.min.css">
+
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<!--<section id="header", style="background: #000000; padding: 0em 0em 0em 0em" >-->
+						 <section id="header",
+								  style="background: url(assets/images/website.jpg);
+								  display: -moz-flex;
+								  display: -webkit-flex;
+								  display: -ms-flex;
+								  display: flex;
+								  background-attachment: fixed;
+								  background-position: center;
+								  background-repeat: no-repeat;
+								  background-size: cover;
+								  border-bottom: 0 !important;
+								  cursor: default;
+								  padding: 0em 0em 4em 0em">
+
+					<div class="container", style="padding:11em 0em 0em 0em">
+
+						<!-- Logo -->
+
+							<h1 id="logo", style="color:#ffd3f9"><img src="assets/images/neurips-navbar-logo.svg" width="80" height="80"/><img src="assets/images/mamba_logo.png" width="80" height="80"/><a href="https://arxiv.org/abs/2505.22535"> &nbsp;RiverMamba: A State Space Model for Global River Discharge <br> and Flood Forecasting</a></h1>
+							<p style="color:white">
+								<strong><a href="https://hakamshams.github.io/">Mohamad Hakam Shams Eddin</st></a><sup><img src="assets/images/icon_1.svg" width="20" height="20"/>,<img src="assets/images/icon_2.svg" width="20" height="20"/></sup>,
+								<a href="https://github.com/yikuizh">Yikui Zhang</a><sup><img src="assets/images/icon_3.svg" width="20" height="20"/>,<img src="assets/images/icon_4.svg" width="20" height="20"/></sup>,
+								<a href="https://www.fz-juelich.de/profile/kollet_s">Stefan Kollet</a><sup><img src="assets/images/icon_3.svg" width="20" height="20"/>,<img src="assets/images/icon_4.svg" width="20" height="20"/></sup>,
+								and
+						  		<a href="http://pages.iai.uni-bonn.de/gall_juergen/">Juergen Gall</a><sup><img src="assets/images/icon_1.svg" width="20" height="20"/>,<img src="assets/images/icon_2.svg" width="20" height="20"/></sup></strong>
+								<br>
+								<br>
+								<img src="assets/images/icon_1.svg" width="20" height="20"/> Institute of Computer Science, University of Bonn, Germany
+								<br>
+            					<img src="assets/images/icon_2.svg" width="20" height="20"/> Lamarr Institute for Machine Learning and Artificial Intelligence, Germany
+								<br>
+								<img src="assets/images/icon_3.svg" width="20" height="20"/> Institute of Bio- and Geosciences Agrosphere (IBG-3), Research Centre Jülich, Germany
+								<br>
+            					<img src="assets/images/icon_4.svg" width="20" height="20"/> Centre for High-Performance Scientific Computing in Terrestrial Systems, Geoverbund ABC/J, Jülich, Germany
+
+							</p>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a class="icon1 ai ai-open-access" href="https://arxiv.org/abs/2505.22535"><span>Paper</span></a></li>
+									<li><a class="icon1 ai ai-arxiv" href="https://arxiv.org/abs/2505.22535"><span>ArXiv</span></a></li>
+									<li><a class="icon brands alt fa-youtube" href=""><span>Video [in preparation]</span></a></li>
+									<li><a class="icon brands alt fa-github" href="https://github.com/HakamShams/RiverMamba_code"><span>Code</span></a></li>
+									<li><a class="icon1 ai ai-open-data" href="https://doi.org/10.60507/FK2/T8QYWE"><span>Dataset [in preparation]</span></a></li>
+								</ul>
+							</nav>
+
+					</div>
+				</section>
+
+
+		<!-- video -->
+			<section style="background: url(assets/images/website_5.jpg);
+								  display: -moz-flex;
+								  display: -webkit-flex;
+								  display: -ms-flex;
+								  display: flex;
+								  background-attachment: fixed;
+								  background-position: center;
+								  background-repeat: no-repeat;
+								  background-size: cover;
+								  border-bottom: 0 !important;
+								  padding: 0em 0em 0em 0em">
+				<div class="container" >
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.38/build/spline-viewer.js"></script>
+<spline-viewer hint loading-anim-type="spinner-big-dark" url="https://prod.spline.design/nolnVLNRiyjh1iQY/scene.splinecode"></spline-viewer>
+				</div>
+			</section>
+
+			</section>
+			<!-- Abstract -->
+				<section id="main">
+					<div class="container">
+						<div id="abstract content">
+							<!-- Post -->
+								<article class="box post">
+									<header>
+										<h2>Abstract</h2>
+										<p align="justify" style="color:black">
+											Recent deep learning approaches for river discharge forecasting have improved the accuracy and efficiency in flood forecasting, enabling more reliable early warning systems for risk management.
+											Nevertheless, existing deep learning approaches in hydrology remain largely confined to local-scale applications and do not leverage the inherent spatial connections of bodies of water.
+											Thus, there is a strong need for new deep learning methodologies that are capable of modeling spatio-temporal relations to improve river discharge and flood forecasting for scientific and operational applications.
+											To address this, <strong><span style="color:#5e0054"> we present RiverMamba, a novel deep learning model that is pretrained with long-term reanalysis data and that can forecast global river discharge and floods on a 0.05&#176 grid up to 7 days lead time</span></strong>, which is of high relevance in early warning.
+											To achieve this, RiverMamba leverages efficient Mamba blocks that enable the model to capture global-scale channel network routing and enhance its forecast capability for longer lead times.
+											The forecast blocks integrate ECMWF HRES meteorological forecasts, while accounting for their inaccuracies through spatio-temporal modeling.
+											Our analysis demonstrates that RiverMamba delivers reliable predictions of river discharge, including extreme floods across return periods and lead times, surpassing both operational AI- and physics-based models.
+										</p>
+									</header>
+								</article>
+						</div>
+					</div>
+
+				</section>
+
+		<section>
+			<article class="box post">
+				<header>
+					<h2>RiverMamba at NeurIPS 2025 [in preparation...]</h2>
+				</header>
+			</article>
+
+			<div class="container", style="background: #f0f0f0; padding: 0em 0 3em 0em">
+			  <!-- Paper video. -->
+			<!-- 	<div class="video main">-->
+					<!-- Youtube embed code here -->
+			<a class="image featured" ><img src="assets/images/Cover_video.jpg" alt="Video"/> </a>
+					<!--<iframe src="https://www.youtube.com/embed/_AD5moplxB0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			  </div> -->
+				<!--</div> -->
+
+			<article class="box post", style="padding: 3em 0em 0em 0em">
+				<header>
+					<h2>RiverMamba at AI for Good</h2>
+				</header>
+			</article>
+			<div class="video main">-->
+				<iframe src="https://www.youtube.com/embed/pZbkIuodeSQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+			</div>
+
+
+<!-- overview -->
+			<section style="background: #000000; padding: 2em 0 3em 0">
+					<div class="container">
+						<div class="row aln-center">
+							<!-- Content -->
+								<div class="col-9">
+									<!-- Post -->
+										<article class="box post">
+											<header>
+												<h2 style="color:#FFFFFF; text-align: center">Overeview</h2>
+											</header>
+											<a href="assets/images/overview.jpg" class="image featured"><img src="assets/images/overview.jpg" alt="Overview of the task" /></a>
+											<p style="color:#FFFFFF;">Overview of the objective of this work.
+												We are interested in <strong><span style="color:#69d3ca">medium-range river discharge and flood forecasting</span></strong>. For this we aim to build a <strong><span style="color:#BC82B5">vision model</span></strong> to consider the spatial relations between points at and near bodies of water.
+												To address <strong><span style="color:#BC82B5"> uncertainty in the meteorological forcing</span></strong>, we aim to build forecast layers so that they can, for each catchment point, incorporate information about meteorological forcing from the neighboring points and throughout the temporal dimension.
+											</p>
+										</article>
+								</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section style="background: #ffffff; padding: 0em 0 2em 0">
+					<div class="container">
+						<div class="row aln-center">
+							<!-- Content -->
+								<div class="col-9">
+									<!-- Post -->
+										<article class="box post">
+											<header>
+												<h2>Model architecture</h2>
+											</header>
+											<a href="assets/images/model.jpg" class="image featured"><img src="assets/images/model.jpg" alt="model design" /></a>
+											<p>
+												An overview of the proposed RiverMamba model for river discharge forecasting.
+												The model forecasts at time t, high-resolution river discharge maps (\(\mathbf{X}^{t+1:t+L}_{dis24}\)) from initial conditions (\(\mathbf{X}^{t−T:t−1}_{ERA5}, \mathbf{X}^{t−T:t−1}_{GloFAS}, \mathbf{X}^{t−T−1:t−2}_{CPC}\)), static river attributes (\(\mathbf{X}_{static}\)), and meteorological forecasts (\(\mathbf{X}^{t+1:t+L}_{HRES}\)).
+											</p>
+											<a href="assets/images/Mamba_block.png" class="image featured"><img src="assets/images/Mamba_block.png" alt="model design" /></a>
+											<p> The structure of the hindcast block and forecast block.
+												Both use a <strong><span style="color:#5e0054"> Bidirectional Mamba block</span></strong> and the forecast block has the same structure as the hindcast block, but it additionally incorporates meteorological forecasts HRES by concatenation.
+												The forecast block also includes LOAN layers although it is not shown in the previous figure.
+											</p>
+										</article>
+								</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- curves -->
+
+				<section id="features" style="background: #FFFFFF; padding: 0em 0 2em 0">
+					<div class="container">
+						<header>
+							<h2>Serialization</h2>
+						</header>
+						<p> We use <strong><span style="color:#5e0054"> Space-filling Curves </span></strong> to connect the points or pixels into one sequence.
+							A space filling curve can be defined as a bijective function \(\Phi: \mathbb{Z}^3 \rightarrow \mathbb{N} \) where every point in the discrete space corresponds to a unique index within one sequence.
+							By altering the curves sequentially through the netowk's blocks, the points or pixels will be connected and scanned from diverse spatial perspectives, enabling RiverMamba to capture different contextual features.
+						</p>
+
+						<div class="row aln-center">
+
+							<div class="col-5">
+									<section>
+										<a href="assets/images/curves_blocks1.png" class="image featured"><img src="assets/images/curves_blocks1.png" alt="Comparison to the baselines 1" /></a>
+									</section>
+							</div>
+							<div class="col-5">
+									<section>
+										<a href="assets/images/curves.jpg" class="image featured"><img src="assets/images/curves.jpg" alt="Comparison to the baselines 2" /></a>
+									</section>
+							</div>
+						</div>
+					</div>
+
+
+
+<!-- Baselines -->
+
+				<section style="background: #ffffff; padding: 2em 0 0em 0">
+					<div class="container">
+						<div class="row aln-center">
+							<!-- Content -->
+								<div class="col-9">
+									<!-- Post -->
+										<article class="box post">
+											<header>
+												<h2>Comparison to the baselines on GloFAS-Reanalysis</h2>
+											</header>
+											<p> Here we compare on 3366 <strong><span style="color:#5e0054"> gauged </span></strong> stations (2021-2024) using reanalysis data. LSTM is based on the encoder-decoder model developed by Google.
+											</p>
+										<a href="assets/images/reanalysis_baselines.jpg" class="image featured"><img src="assets/images/reanalysis_baselines.jpg" alt="Comparison to the baselines 1" /></a>
+										</article>
+								</div>
+						</div>
+					</div>
+				</section>
+
+<!-- Prediction Regions -->
+
+				<section style="background: #000000; padding: 1em 0 1em 0">
+					<div class="container">
+						<header><h2 style="color:#FFFFFF; text-align: center">Results on GloFAS-Reanalysis</h2></header>
+						<p style="color:#FFFFFF">
+							We compare daily flood severity maps from GloFAS reanalysis as a ground truth and RiverMamba model at extreme flood events with different causes in 2024 and from different places around the Earth.
+							These maps are usually used in the operational flood forecast service like GloFAS to provide a quick overview of the ongoing and upcoming flood events.
+						</p>
+						<div class="row aln-center">
+							<!-- Content -->
+								<div class="col-10">
+									<!-- Post -->
+									 <div class="carousel results-carousel">
+												<div class="item">
+													<a href="assets/gifs/china_black_optimized.gif" class="image fit"><img src="assets/gifs/china_black_optimized.gif" alt="Qualitative results on GloFAS-Reanalysis"  /></a>
+													<h3 class="header" style="color: white; text-align: center">
+														Comparison between GloFAS reanalysis (top, used as reference) and RiverMamba forecast (bottom) during the <span style="color:#BC82B5">Central-South China flood events </span> in June 2024 due to unprecedented rainfall.
+														Shown are flood severity maps at 5-km resolution where each panel shows flood extent at different lead times from 1 to 5 days.
+													</h3>
+												</div>
+
+												<div class="item">
+													<a href="assets/gifs/california_black_optimized.gif" class="image fit"><img src="assets/gifs/california_black_optimized.gif" alt="Qualitative results on GloFAS-Reanalysis"  /></a>
+													<h3 class="header" style="color: white; text-align: center">
+														Comparison between GloFAS reanalysis (top, used as reference) and RiverMamba forecast (bottom) during the <span style="color:#BC82B5">California, USA flood </span> in February 2024.
+														It was caused by two powerful atmospheric rivers. Shown are flood severity maps at 5-km resolution where each panel shows flood extent at different lead times from 1 to 5 days.
+													</h3>
+												</div>
+
+										 		<div class="item">
+													<a href="assets/gifs/southeast_europe_black_optimized.gif" class="image fit"><img src="assets/gifs/southeast_europe_black_optimized.gif" alt="Qualitative results on GloFAS-Reanalysis"  /></a>
+													<h3 class="header" style="color: white; text-align: center">
+														Comparison between GloFAS reanalysis (top, used as reference) and RiverMamba forecast (bottom) during the <span style="color:#BC82B5">Central European floods event </span> in 2024.
+														In September 2024, Storm Boris brought record-breaking rainfall to Central Europe, causing devastating floods across Austria, the Czech Republic, Poland, Romania, Slovakia, Germany, and Hungary.
+														This was followed by the <span style="color:#BC82B5">Southeast European flood </span> in October 2024.
+														Shown are flood severity maps at 5-km resolution where each panel shows flood extent at different lead times from 1 to 5 days.
+													</h3>
+												</div>
+
+										 		<div class="item">
+													<a href="assets/gifs/spain_black_optimized.gif" class="image fit"><img src="assets/gifs/spain_black_optimized.gif" alt="Qualitative results on GloFAS-Reanalysis"  /></a>
+													<h3 class="header" style="color: white; text-align: center">
+														Comparison between GloFAS reanalysis (top, used as reference) and RiverMamba forecast (bottom) during the <span style="color:#BC82B5">Spanish flood event </span> in October 2024.
+														The flood event primarily affecting the Valencia region, was caused by a cold drop (DANA) weather system intensified by climate change. Shown are flood severity maps at 5-km resolution where each panel shows flood extent at different lead times from 1 to 5 days.
+													</h3>
+												</div>
+									 </div>
+								</div>
+						</div>
+					</div>
+				</section>
+
+<!-- Results on GRDC data -->
+			<section style="background: #FFFFFF; padding: 1em 0 0em 0">
+					<div class="container">
+						<header><h2 style="color:#000000; text-align: center">Results on GRDC observations</h2></header>
+
+						<div class="row aln-center" >
+							<!-- Content -->
+								<div class="col-11">
+									<!-- Post -->
+										<article class="box post">
+											<p> Here we compare on 3366 <strong><span style="color:#5e0054"> gauged </span></strong> stations (2021-2023) using GRDC observational data.
+												LSTM is based on the encoder-decoder model developed by Google and GloFAS is the operational system operated by ECMWF.
+											</p>
+										<a href="assets/images/obs_baselines.jpg" class="image featured"><img src="assets/images/obs_baselines.jpg" alt="Comparison to the baselines 2" /></a>
+										</article>
+								</div>
+						</div>
+					</div>
+				</section>
+
+<!-- Results on GRDC data -->
+
+	<section style="background: #000000; padding: 2em 0 2em 0">
+					<div class="container">
+						<header><h2 style="color:#FFFFFF; text-align: center">Results on GRDC observations </h2></header>
+
+							<div class="row aln-center" >
+							<!-- Content -->
+								<div class="col-11">
+									<!-- Post -->
+										<article class="box post">
+											<p style="color:#FFFFFF"> River discharge of the <strong><span style="color:#69d3ca">Sauer river</span></strong> in 2021.
+												The grey shaded area highlights the Germany flood between July 10 to July 20 in 2021.
+											</p>
+										<a href="assets/gifs/timeseries4.gif" class="image featured"><img src="assets/gifs/timeseries4.gif" alt="Comparison to the baselines 2" /></a>
+										</article>
+								</div>
+						</div>
+
+					</div>
+				</section>
+
+<!-- Poster -->
+
+			<section style="background: white; padding: 0em 0 0em 0">
+					<div class="container">
+						<div class="row aln-center">
+							<!-- Content -->
+								<div  class="col-12">
+									<!-- Post -->
+										<article class="box post">
+											<header>
+												<h2 align="left">Poster</h2>
+											</header>
+											<a href="assets/images/RiverMamba_NeurIPS_25.jpg" class="image featured"><img src="assets/images/RiverMamba_NeurIPS_25.jpg" alt="Poster" /></a>
+											  <!--<iframe  src="assets/pdfs/Shams_Gall.pdf" width="100%" height="1800px"></iframe>-->
+										</article>
+								</div>
+						</div>
+					</div>
+				</section>
+
+
+<!-- BibTex citation -->
+			<section class="section" id="BibTeX" style="background: #F2F2F2; padding: 1em 0 1em 0">
+				<div class="container is-max-desktop content aln-center">
+				  <h2 align="left"; class="title">BibTeX</h2>
+				  <pre style="text-align: left">
+
+
+			@article{rivermamba,
+					  title={RiverMamba: A State Space Model for Global River Discharge and Flood Forecasting},
+					  author={Shams Eddin, Mohamad Hakam and Zhang, Yikui and Kollet, Stefan and Gall, Juergen},
+					  journal={arXiv preprint arXiv:2505.22535},
+					  year={2025}
+					  }
+
+				  </pre>
+				</div>
+			</section>
+
+
+			<section style="background: #ffffff; padding: 2em 0 3em 0">
+					<div class="container">
+						<header><h2 style="color:#000000; text-align: left">Dataset, reforecasts and pretrained models [will be added here soon...] </h2></header>
+
+					<!--<header><h2 style="color:#000000; text-align: left">BibTeX Dataset: </h2></header> -->
+					<div class="row aln-center" >
+						<!--<script src="https://bonndata.uni-bonn.de/resources/js/widgets.js?persistentId=doi:10.60507/FK2/RD9E33&amp;dvUrl=https://bonndata.uni-bonn.de&amp;widget=citation&amp;heightPx=260"></script> -->
+						<script src="https://bonndata.uni-bonn.de/resources/js/widgets.js?persistentId=doi:10.60507/FK2/T8QYWE&amp;dvUrl=https://bonndata.uni-bonn.de&amp;widget=iframe&amp;heightPx=500"></script>
+					</div>
+						</div>
+			</section>
+
+
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<div class="columns is-centered">
+						  <div class="column is-8">
+							<div class="content">
+
+							  <p align="center">
+								This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+								Commons Attribution-ShareAlike 4.0 International License</a>. You are free to use the <a href="https://github.com/HakamShams/RiverMamba">source code</a> of this website, we only ask you to give appropriate credits by mentioning the <a href="https://hakamshams.github.io/RiverMamba/">RiverMamba</a> website and to consider the licences of the source codes.
+							  </p>
+								<h3 align="center" style="color: white; font-size:22px"> Contact: <a href="mailto:shams@iai.uni-bonn.de">shams@iai.uni-bonn.de</a>
+									&emsp;&emsp;
+									<a href="mailto:gall@iai.uni-bonn.de">gall@iai.uni-bonn.de</a>
+									&emsp;&emsp;
+									<a href="mailto:yik.zhang@fz-juelich.de">yik.zhang@fz-juelich.de</a>
+									&emsp;&emsp;
+									<a href="mailto:s.kollet@fz-juelich.de">s.kollet@fz-juelich.de</a>
+
+								</h3>
+							</div>
+						  </div>
+						</div>
+					  </div>
+
+					<div id="copyright" class="container">
+
+						<ul class="links">
+
+							<li>&copy; All rights reserved</li>
+							<li>Design: <a href="https://hakamshams.github.io/IDE/">IDE</a> & <a  href="http://html5up.net">HTML5 UP</a> &
+								<a href="https://nerfies.github.io">Nerfie</a>
+							</li>
+						<!--	<li>Contact: <a style="color: white" href="mailto:shams@iai.uni-bonn.de">shams@iai.uni-bonn.de</a> or
+							 <a style="color: white" href="mailto:gall@iai.uni-bonn.de">gall@iai.uni-bonn.de</a></li> -->
+						</ul>
+					</div>
+
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		  	<script src="./assets/js/bulma-carousel.min.js"></script>
+	  		<script src="./assets/js/bulma-slider.min.js"></script>
+	  		<script src="./assets/js/index.js"></script>-->
+
+	  		<script id="MathJax-script" async
+					src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+
+	</body>
+</html>
+
