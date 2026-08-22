@@ -6,12 +6,18 @@ This is the source code for the [RiverMamba Website](https://hakamshams.github.i
 If you find our work useful in your research, please cite:
 
 ```
-@article{rivermamba,
-          title={RiverMamba: A State Space Model for Global River Discharge and Flood Forecasting},
-          author={Shams Eddin, Mohamad Hakam and Zhang, Yikui and Kollet, Stefan and Gall, Juergen},
-          journal={arXiv preprint arXiv:2505.22535},
-          year={2025}
-          }
+@inproceedings{RiverMamba,
+               author = {Shams Eddin, Mohamad Hakam and Zhang, Yikui and Kollet, Stefan and Gall, J\"{u}rgen},
+               booktitle = {Advances in Neural Information Processing Systems},
+               doi = {10.52202/085713-4446},
+               editor = {D. Belgrave and C. Zhang and H. Lin and R. Pascanu and P. Koniusz and M. Ghassemi and N. Chen},
+               pages = {133401--133423},
+               publisher = {Curran Associates, Inc.},
+               title = {RiverMamba: A State Space Model for Global River Discharge and Flood Forecasting},
+               url = {https://proceedings.neurips.cc/paper_files/paper/2025/file/c1501f836c75dd1da19974a38c64ee1e-Paper-Conference.pdf},
+               volume = {38, Main Conference},
+               year = {2025}
+}
 ```
 
 ## Website License
